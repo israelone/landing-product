@@ -110,7 +110,7 @@ a {
   padding: 18px;
 }
 
-#video {
+#video-container {
   margin: 10px auto;
   width: 350px;
 }
@@ -151,7 +151,7 @@ li {
   list-style: none;
 }
 
-#description-container,
+#description,
 #model-options {
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@ li {
   font-family: var(--paragraph);
 }
 
-#description-container {
+#description {
   color: var(--blue);
 }
 
@@ -188,7 +188,7 @@ label {
   font-family: var(--headers-font);
 }
 
-#submit {
+#submit-container {
   margin: 10px;
   text-align: center;
 }
@@ -381,7 +381,7 @@ a i:hover {
     margin: auto 10px;
   }
 
-  #video {
+  #video-container {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -397,7 +397,7 @@ a i:hover {
     justify-self: center;
   }
 
-  #description-container {
+  #description {
     margin: 30px auto;
     display: grid;
   }
@@ -506,9 +506,7 @@ a i:hover {
     display: inline-block;
   }
 
-  #name,
-  #email,
-  #number {
+  .inputFields {
     align-items: center;
   }
 

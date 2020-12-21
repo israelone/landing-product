@@ -15,7 +15,7 @@
 <body>
   <div id="header">
     <nav id="nav-bar">
-      <img id="header-img" src="machine.svg" height="100px" width="150px" />
+      <img alt="Machine Image" id="header-img" src="machine.svg" height="100px" width="150px" />
       <div id="list-container">
         <ul>
           <li><a class="nav-link" href="#about">About</a></li>
@@ -36,13 +36,13 @@
         mollitia voluptatem dicta blanditiis vel fugit doloremque molestiae
         eius rerum. Vero, repudiandae.
       </p>
-      <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KueMDjwqx54" frameborder="0"
+      <div id="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KueMDjwqx54" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div id="description-container">
+    <div id="description">
       <div class="description-section">
         <i class="fas fa-check"></i>
         <div>
@@ -112,30 +112,30 @@
           Send us an email
         </h2>
 
-        <form id="form">
-          <div id="name" class="inputFields">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <div  class="inputFields">
             <label for="name" id="name-label">Name:</label>
-            <input type="text" name="name" required placeholder="Your Name" />
+            <input id="name" type="text" name="name" required placeholder="Your Name" />
           </div>
 
-          <div id="email" class="inputFields">
+          <div  class="inputFields">
             <label for="email" id="email-label">Email:</label>
 
-            <input type="email" name="email" required placeholder="Your Email" />
+            <input id="email" type="email" name="email" required placeholder="Your Email" />
           </div>
 
-          <div id="number" class="inputFields">
+          <div  class="inputFields">
             <label for="phonenumber" id="phonenumber-label">Phone:</label>
-            <input type="number" name="number" required placeholder="Ex.(111)288-1121" />
+            <input id="number" type="number" name="number" required placeholder="Ex.(111)288-1121" />
           </div>
 
-          <div id="textArea" class="inputFields">
+          <div class="inputFields">
             <label for="message" id="message">Message:</label>
             <textarea rows="5" cols="50"></textarea>
           </div>
 
-          <div id="submit">
-            <input formaction="https://www.freecodecamp.com/email-submit" id="submit-input" type="submit"
+          <div id="submit-container">
+            <input id="submit"  id="submit-input" type="submit"
               value="Submit">
           </div>
         </form>
